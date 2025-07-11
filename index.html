@@ -1,4 +1,4 @@
-t <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,19 +10,61 @@ t <!DOCTYPE html>
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/Normalize.css">
     <link rel="stylesheet" href="css/all.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+
 </head>
 
 <body>
 
+  <!-- Start Settings Box -->
+    <div class="settings-box">
+      <div class="toggle-settings">
+        <i class="fa fa-gear"></i>
+      </div>
+      <div class="settings-container">
+        <div class="option-box">
+          <h4>Colors</h4>
+          <ul class="colors-list">
+            <li class="active" data-color="#FF9800"></li>
+            <li data-color="#E91E63"></li>
+            <li data-color="#009688"></li>
+            <li data-color="#03A9F4"></li>
+            <li data-color="#4CAF50"></li>
+          </ul>
+        </div>
+        <div class="option-box">
+          <h4>Random Backgrounds</h4>
+          <div class="random-backgrounds">
+            <span class="yes active" data-background="yes">Yes</span>
+            <span class="no" data-background="no">No</span>
+          </div>
+        </div>
+        <div class="option-box">
+          <h4>Show Bullets</h4>
+          <div class="bullets-option">
+            <span class="yes active" data-display="show">Yes</span>
+            <span class="no" data-display="hide">No</span>
+          </div>
+        </div>
+        <button class="reset-options">Reset Options</button>
+      </div>
+    </div>
+    <!-- End Settings Box -->
+
     <!-- Start Landing Page -->
-    <div class="landing-page">
+    <div class="landing-page" id="landingPage">
         <div class="overlay"></div>
         <div class="container">
             <div class="header-area">
                 <div class="logo">Special Design</div>
                 <div class="links-container">
                     <ul class="links">
-                        <li><a href="#" data-section=".about-us">About</a></li>
+                        <li><a href="#" class="active" data-section=".about-us">About</a></li>
                         <li><a href="#" data-section=".skills">Skills</a></li>
                         <li><a href="#" data-section=".gallery">Gallery</a></li>
                         <li><a href="#" data-section=".timeline">Timeline</a></li>
@@ -44,7 +86,11 @@ t <!DOCTYPE html>
         </div>
     </div>
     <!-- End Landing Page -->
-    </div>
+    <div class="settings-box">
+
+    </div>    
+
+
     <script src="js/master.js"></script>
 </body>
 
